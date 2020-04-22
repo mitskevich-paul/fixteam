@@ -1,0 +1,442 @@
+@import url("./reset.css");
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background: url("../sources/mainBG.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.062);
+}
+header {
+    width: 100%;
+    height: 100vh;
+}
+.callUs {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.479);
+    z-index: 500;
+}
+.callUs p {
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15vh 0 0 0;
+    color: white;
+}
+.scroll {
+    font-size: 25px;
+    opacity: 0.8;
+    text-transform: uppercase;
+    color: white;
+}
+.header-scroll {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+}
+.wr-main {
+    width: 100%;
+    height: 100vh;
+}
+.wr-main .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.wr-main_header,
+.wr-whyWe_header,
+.wr-aboutUs_header,
+.wr-callBack h2 {
+    padding-top: 5vh;
+    font-size: 45px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.wr-main_svg-container {
+    height: 80vh;
+    width: calc(70vh / 1.8);
+    border: 5px solid black;
+    border-radius: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    background: white;
+    position: relative;
+}
+.wr-main_phone-button {
+    height: 5vh;
+    width: calc(5vh);
+    position: absolute;
+    left: 50%;
+    bottom: 1.5%;
+    transform: translateX(-50%);
+    border: 2px gold solid;
+    border-radius: 100%;
+}
+.wr-main_phone {
+    height: 63vh;
+    width: calc(65vh / 1.9);
+    border: 5px solid black;
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.phoneBattery {
+    background: url(../sources/lowBattery.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.phoneScreen {
+    background: url(../sources/crashed.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.phoneConnect {
+    background: url(../sources/lostConnection.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.wr-main svg {
+    height: 65vh;
+    width: calc(65vh / 2);
+    border: 5px solid black;
+    border-radius: 3vh;
+    background: rgba(255, 255, 255, 0.479);
+}
+.wr-main_weFix {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 3px; 
+    letter-spacing: 10px;
+}
+.wr-whyWe .container{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
+}
+.wr-whyWe h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 0;
+    display: block;
+    margin: auto;
+}
+.wr-whyWe p:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.wr-whyMe_parts {
+    background: url("../sources/parts.jpg");
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.wr-whyWe p:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.wr-whyMe_work {
+    background: url("../sources/work.jpg");
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.wr-whyWe p:nth-of-type(3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.wr-whyMe_devise {
+    background: url("../sources/axcesuares.jpg");
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.wr-whyWe p:nth-of-type(4) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.wr-whyMe_client {
+    background: url("../sources/klient.jpg");
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.wr-whyWe p:nth-of-type(5) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.wr-whyMe_pay {
+    background: url("../sources/pay.jpg");
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.whyMeDiv {
+    display: block;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wr-whyWe_discr {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    display: block;
+    margin: auto;
+}
+.wr-aboutUs .container {
+    padding-top: 100px;
+}
+.wr-aboutUs iframe {
+    width: 100%;
+    height: 50vh;
+    padding-top: 50px;
+}
+footer .container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.footer-left,
+.footer-right {
+    width: 45%;
+    height: 100%;
+}
+footer p,
+footer a {
+    font-size: 25px;
+    color: white;
+}
+.wr-callBack .container {
+    padding-top: 50px;
+}
+.wr-callBack h2 {
+    padding-bottom: 50px;
+}
+.wr-callBackPhoneButton p {
+    font-size: 40px;
+    color: white;
+}
+.wr-callBackPhone {
+    width: 300px;
+    height: 120px;
+    border: solid 5px black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: auto;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+.wr-callBackPhoneButton {
+    width: 280px;
+    height: 120px;
+    border: solid 5px black;
+    border-radius: 25px;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+.wr-callBackPhoneButton:hover {
+    cursor: pointer;
+    background-color: rgb(181, 255, 166);
+}
+.callBackPhoneInput {
+    border: 2px solid blue;
+    background: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    font-weight: 900;
+    display: block;
+}
+.callBackPhoneText {
+    color: black;
+    font-size: 25px;
+}
+.callBackPhoneDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.invalid {
+    border: 2px solid red;
+}
+
+@media all and (max-width: 1250px) {
+    .container {
+        width: 100%;
+    }
+}
+@media all and (max-width: 750px) {
+    .wr-whyWe .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 20vh 60vh 20vh 60vh 20vh 60vh 20vh 60vh 20vh 60vh;
+    }
+    .wr-whyWe h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .wr-whyWe p:nth-of-type(1) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .wr-whyMe_parts {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: 100%;
+    }
+    .wr-whyWe p:nth-of-type(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .wr-whyMe_work {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        height: 100%;
+    }
+    .wr-whyWe p:nth-of-type(3) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    .wr-whyMe_devise {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        height: 100%;
+    }
+    .wr-whyWe p:nth-of-type(4) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+    .wr-whyMe_client {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 10;
+        height: 100%;
+    }
+    .wr-whyWe p:nth-of-type(5) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
+    .wr-whyMe_pay {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 11;
+        grid-row-end: 12;
+        height: 100%;
+    }
+}
+
+@media all and (max-width: 450px) {
+    h1 {
+        font-size: 40px;
+    }
+    .wr-main_header {
+        font-size: 30px;
+    }
+    .wr-main_weFix {
+        font-size: 35px;
+    }
+    .wr-main_header,
+    .wr-whyWe_header,
+    .wr-aboutUs_header,
+    .wr-callBack h2 {
+        font-size: 30px;
+    }
+    .wr-whyWe_discr {
+        font-size: 30px;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    .footer-left,
+    .footer-right {
+        padding: 30px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
