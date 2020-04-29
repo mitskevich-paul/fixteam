@@ -237,3 +237,79 @@ callBackButton.addEventListener("click", () => {
         })
     }, 500)
 })
+
+
+let buttton = document.querySelector(".control");
+let menu = document.querySelector(".menuMainClass");
+buttton.addEventListener("click", () => {
+    if (menu.classList.contains("menubottom")) {
+        menu.classList.remove("menubottom");
+        menu.classList.add("menutop");
+        buttton.style.transform = "rotate(180deg)";
+    } else if (menu.classList.contains("menutop")) {
+        menu.classList.remove("menutop");
+        menu.classList.add("menubottom");
+        buttton.style.transform = "rotate(0deg)";
+    }
+});
+
+let priceFor = document.querySelector('.prices').children;
+let appleChoseListener = document.querySelector('.phoneModelsApple');
+let appleChose = document.querySelector('.phoneModelsApple').children;
+appleChoseListener.addEventListener('click', () => {
+    if (appleChose[0].checked) {
+        priceFor[1].innerText = "100";
+        priceFor[3].innerText = "150";
+        priceFor[5].innerText = "55";
+        priceFor[7].innerText = "30";
+        priceFor[9].innerText = "70";
+        priceFor[11].innerText = "120";
+        priceFor[13].innerText = "40";
+        priceFor[15].innerText = "20";
+    } else if (appleChose[2].checked) {
+        priceFor[1].innerText = "110";
+        priceFor[3].innerText = "160";
+        priceFor[5].innerText = "65";
+        priceFor[7].innerText = "40";
+        priceFor[9].innerText = "80";
+        priceFor[11].innerText = "130";
+        priceFor[13].innerText = "50";
+        priceFor[15].innerText = "30";
+    } else if (appleChose[4].checked) {
+        priceFor[1].innerText = "120";
+        priceFor[3].innerText = "170";
+        priceFor[5].innerText = "75";
+        priceFor[7].innerText = "50";
+        priceFor[9].innerText = "90";
+        priceFor[11].innerText = "140";
+        priceFor[13].innerText = "60";
+        priceFor[15].innerText = "40";
+    } else if (appleChose[6].checked) {
+        priceFor[1].innerText = "130";
+        priceFor[3].innerText = "180";
+        priceFor[5].innerText = "85";
+        priceFor[7].innerText = "60";
+        priceFor[9].innerText = "100";
+        priceFor[11].innerText = "150";
+        priceFor[13].innerText = "70";
+        priceFor[15].innerText = "50";
+    } else if (appleChose[8].checked) {
+        priceFor[1].innerText = "140";
+        priceFor[3].innerText = "190";
+        priceFor[5].innerText = "95";
+        priceFor[7].innerText = "70";
+        priceFor[9].innerText = "110";
+        priceFor[11].innerText = "160";
+        priceFor[13].innerText = "80";
+        priceFor[15].innerText = "60";
+    } else if (appleChose[10].checked) {
+        priceFor[1].innerText = "150";
+        priceFor[3].innerText = "200";
+        priceFor[5].innerText = "105";
+        priceFor[7].innerText = "80";
+        priceFor[9].innerText = "120";
+        priceFor[11].innerText = "170";
+        priceFor[13].innerText = "90";
+        priceFor[15].innerText = "70";
+    }
+})
