@@ -1,14 +1,64 @@
 @import url("./reset.css");
+@font-face {
+    font-family: softBold;
+    src: url(../fonts/softBold.ttf);
+}
 body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background: url("../sources/mainBG.jpg");
-    background-size: cover;
-    background-position: center;
+    background: url("../sources/mainBG1.jpg");
+    background-size: contain;
+    background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: #000;
 }
+a {
+    color: yellow;
+    font-style: normal;
+}
+.menubottom {
+    width: inherit;
+    height: 50px;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    z-index: 10000;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-family: softBold;
+    font-size: 25px;
+}
+.menutop {
+    width: inherit;
+    height: 50px;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    z-index: 10000;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-family: softBold;
+    font-size: 25px;
+}
+.control {
+    height: 100%;
+    width: 50px;
+    background: url("../sources/arrow.png");
+    background-size: cover;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+
 .container {
     display: block;
     margin: 0 auto;
@@ -20,6 +70,161 @@ body {
 header {
     width: 100%;
     height: 100vh;
+}
+.wr-prices .container,
+.phoneMarks {
+    padding-top: 50px;
+}
+.phoneMarks {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.phoneMarks {
+    margin-bottom: 50px;
+}
+.phoneMarks input {
+    display: none;
+}
+.phoneMarks input:nth-of-type(1):checked ~ label:nth-of-type(1),
+.phoneMarks input:nth-of-type(2):checked ~ label:nth-of-type(2),
+.phoneMarks input:nth-of-type(3):checked ~ label:nth-of-type(3),
+.phoneMarks input:nth-of-type(4):checked ~ label:nth-of-type(4),
+.phoneMarks input:nth-of-type(5):checked ~ label:nth-of-type(5) {
+    color: rgb(9, 255, 0);
+}
+.phoneMarks label {
+    cursor: pointer;
+    font-size: 40px;
+    color: yellow;
+    text-shadow: black 3px 3px 5px, black -3px -3px 5px;
+    font-weight: 900;
+    font-family: softBold;
+    text-align: center;
+}
+.phoneModelsApple label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    cursor: pointer;
+    font-size: 40px;
+    color: yellow;
+    text-shadow: black 3px 3px 5px, black -3px -3px 5px;
+    font-weight: 900;
+    font-family: softBold;
+    text-align: center;
+    margin: 10px;
+}
+.phoneModelsApple input:nth-of-type(1):checked ~ label:nth-of-type(1),
+.phoneModelsApple input:nth-of-type(2):checked ~ label:nth-of-type(2),
+.phoneModelsApple input:nth-of-type(3):checked ~ label:nth-of-type(3),
+.phoneModelsApple input:nth-of-type(4):checked ~ label:nth-of-type(4),
+.phoneModelsApple input:nth-of-type(5):checked ~ label:nth-of-type(5),
+.phoneModelsApple input:nth-of-type(6):checked ~ label:nth-of-type(6),
+.phoneModelsApple input:nth-of-type(7):checked ~ label:nth-of-type(7),
+.phoneModelsApple input:nth-of-type(8):checked ~ label:nth-of-type(8),
+.phoneModelsApple input:nth-of-type(9):checked ~ label:nth-of-type(9),
+.phoneModelsApple input:nth-of-type(10):checked ~ label:nth-of-type(10),
+.phoneModelsApple input:nth-of-type(11):checked ~ label:nth-of-type(11),
+.phoneModelsApple input:nth-of-type(12):checked ~ label:nth-of-type(12),
+.phoneModelsApple input:nth-of-type(13):checked ~ label:nth-of-type(13),
+.phoneModelsApple input:nth-of-type(14):checked ~ label:nth-of-type(14),
+.phoneModelsApple input:nth-of-type(15):checked ~ label:nth-of-type(15),
+.phoneModelsApple input:nth-of-type(16):checked ~ label:nth-of-type(16),
+.phoneModelsApple input:nth-of-type(17):checked ~ label:nth-of-type(17),
+.phoneModelsApple input:nth-of-type(18):checked ~ label:nth-of-type(18),
+.phoneModelsApple input:nth-of-type(19):checked ~ label:nth-of-type(19),
+.phoneModelsApple input:nth-of-type(20):checked ~ label:nth-of-type(20) {
+    color: rgb(9, 255, 0);
+}
+.phoneModelsApple input {
+    display: none;
+}
+.modelApple4s {
+    background: url("../sources/4s.jpg");
+}
+.modelApple5 {
+    background: url("../sources/5.jpg");
+}
+.modelApple5c {
+    background: url("../sources/5с.jpg");
+}
+.modelApple5s {
+    background: url("../sources/5s.jpg");
+}
+.modelAppleSe {
+    background: url("../sources/se.jpg");
+}
+.modelApple6 {
+    background: url("../sources/6.jpg");
+}
+.modelApple6plus {
+    background: url("../sources/6plus.jpg");
+}
+.modelApple6s {
+    background: url("../sources/6s.jpg");
+}
+.modelApple6sPlus {
+    background: url("../sources/6splus.jpg");
+}
+.modelApple7 {
+    background: url("../sources/7.jpg");
+}
+.modelApple7plus {
+    background: url("../sources/7plus.jpg");
+}
+.modelApple8 {
+    background: url("../sources/8.jpg");
+}
+.modelApple8plus {
+    background: url("../sources/8plus.jpg");
+}
+.modelAppleX {
+    background: url("../sources/x.jpg");
+}
+.modelAppleXr {
+    background: url("../sources/xr.jpg");
+}
+.modelAppleXs {
+    background: url("../sources/xs.jpg");
+}
+.modelAppleXsMax {
+    background: url("../sources/xsmax.jpg");
+}
+.modelApple11 {
+    background: url("../sources/11.jpg");
+}
+.modelApple11pro {
+    background: url("../sources/11pro.jpg");
+}
+.modelApple11proMax {
+    background: url("../sources/11promax.jpg");
+}
+.prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: softBold;
+}
+.prices p {
+    font-size: 40px;
+    color: yellow;
+    text-shadow: black 3px 3px 5px, black -3px -3px 5px;
+}
+.prices span {
+    font-size: 30px;
+    color: rgb(9, 255, 0);
+    text-shadow: black 3px 3px 5px, black -3px -3px 5px;
 }
 .callUs {
     position: fixed;
@@ -35,12 +240,18 @@ header {
     text-align: center;
 }
 h1 {
-    font-size: 50px;
-    font-weight: 900;
-    text-align: center;
+    padding: 20vh 0;
+    font-family: softBold;
     text-transform: uppercase;
-    padding: 15vh 0 0 0;
-    color: white;
+    font-size: 50px;
+    text-align: center;
+    color: yellow;
+}
+h2,
+p,
+input,
+select {
+    font-family: softBold;
 }
 .scroll {
     font-size: 25px;
@@ -66,7 +277,8 @@ h1 {
 .wr-main_header,
 .wr-whyWe_header,
 .wr-aboutUs_header,
-.wr-callBack h2 {
+.wr-callBack h2,
+.wr-prices h2 {
     padding-top: 5vh;
     font-size: 45px;
     color: white;
@@ -142,8 +354,7 @@ h1 {
     word-spacing: 3px; 
     letter-spacing: 10px;
 }
-.wr-whyWe .container{
-    padding-top: 100px;
+.wr-whyWe .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
@@ -169,6 +380,7 @@ h1 {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    border-radius: 10px;
 }
 .wr-whyWe p:nth-of-type(2) {
     grid-column-start: 2;
@@ -182,6 +394,7 @@ h1 {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    border-radius: 10px;
 }
 .wr-whyWe p:nth-of-type(3) {
     grid-column-start: 1;
@@ -195,6 +408,7 @@ h1 {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+    border-radius: 10px;
 }
 .wr-whyWe p:nth-of-type(4) {
     grid-column-start: 2;
@@ -208,6 +422,7 @@ h1 {
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 6;
+    border-radius: 10px;
 }
 .wr-whyWe p:nth-of-type(5) {
     grid-column-start: 1;
@@ -221,6 +436,7 @@ h1 {
     grid-column-end: 3;
     grid-row-start: 6;
     grid-row-end: 7;
+    border-radius: 10px;
 }
 .whyMeDiv {
     display: block;
