@@ -9,8 +9,14 @@
 <body>
     <header>
         <div class="container">
+            <div class="menubottom menuMainClass">
+                <button class="control"></button>
+                <a href="#prices">Цены на услуги</a>
+                <a href="#callBack">Заказать звонок</a>
+                <a href="#weAre">Найти нас</a>
+            </div>
             <h1>сервисный центр по ремонту телефонов</h1>
-            <p class="scroll header-scroll">&darr; листай вниз</p>
+            <p class="scroll header-scroll">&darr; get low</p>
         </div>
     </header>
     <section class="wr-main">
@@ -21,6 +27,113 @@
                 <div class="wr-main_phone-button"></div>
             </div>
             <p class="wr-main_weFix">мы исправим все!</p>
+        </div>
+    </section>
+    <section class="wr-prices">
+        <div class="container">
+            <a name="prices"></a>
+            <h2>Каталог цен на популярные модели</h2>
+            <div class="phoneMarks">
+                <input type="radio" name="marks" id="markIphone" checked>
+                <label for="markIphone">Iphone</label>
+                <input type="radio" name="marks" id="markSamsung">
+                <label for="markSamsung">Samsung</label>
+                <input type="radio" name="marks" id="markHuawei">
+                <label for="markHuawei">Huawei</label>
+                <input type="radio" name="marks" id="markXiaomi">
+                <label for="markXiaomi">Xiaomi</label>
+                <input type="radio" name="marks" id="markMeizu">
+                <label for="markMeizu">Meizu</label>
+            </div>
+            <div class="phoneModelsApple">
+                <input type="radio" name="modelsApple" id="modelApple4s">
+                <label for="modelApple4s" class="modelApple4s"><span>4s</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple5">
+                <label for="modelApple5" class="modelApple5"><span>5</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple5c">
+                <label for="modelApple5c" class="modelApple5c"><span>5c</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple5s">
+                <label for="modelApple5s" class="modelApple5s"><span>5s</span></label>
+
+                <input type="radio" name="modelsApple" id="modelAppleSe">
+                <label for="modelAppleSe" class="modelAppleSe"><span>SE</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple6">
+                <label for="modelApple6" class="modelApple6"><span>6</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple6plus">
+                <label for="modelApple6plus" class="modelApple6plus"><span>6 Plus</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple6s">
+                <label for="modelApple6s" class="modelApple6s"><span>6s</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple6sPlus">
+                <label for="modelApple6sPlus" class="modelApple6sPlus"><span>6s Plus</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple7">
+                <label for="modelApple7" class="modelApple7"><span>7</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple7plus">
+                <label for="modelApple7plus" class="modelApple7plus"><span>7 Plus</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple8">
+                <label for="modelApple8" class="modelApple8"><span>8</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple8plus">
+                <label for="modelApple8plus" class="modelApple8plus"><span>8 Plus</span></label>
+
+                <input type="radio" name="modelsApple" id="modelAppleX">
+                <label for="modelAppleX" class="modelAppleX"><span>X</span></label>
+
+                <input type="radio" name="modelsApple" id="modelAppleXr">
+                <label for="modelAppleXr" class="modelAppleXr"><span>XR</span></label>
+
+                <input type="radio" name="modelsApple" id="modelAppleXs">
+                <label for="modelAppleXs" class="modelAppleXs"><span>XS</span></label>
+
+                <input type="radio" name="modelsApple" id="modelAppleXsMax">
+                <label for="modelAppleXsMax" class="modelAppleXsMax"><span>XS Max</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple11">
+                <label for="modelApple11" class="modelApple11"><span>11</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple11pro">
+                <label for="modelApple11pro" class="modelApple11pro"><span>11 Pro</span></label>
+
+                <input type="radio" name="modelsApple" id="modelApple11proMax">
+                <label for="modelApple11proMax" class="modelApple11proMax"><span>11 Pro Max</span></label>
+            </div>
+            <div class="prices">
+                <p class="repearDisplay">замена дисплейного модуля:</p>
+                <span class="priceDisplay"></span>
+
+                <p class="repearBody">замена корпуса:</p>
+                <span class="priceBody"></span>
+
+                <p class="repearContact">замена шлейфа:</p>
+                <span class="priceContact"></span>
+
+                <p class="repearAudioMain">замена динамика (основного):</p>
+                <span class="priceAudioMain"></span>
+
+                <p class="repearAudioSecond">замена динамика (полифонического):</p>
+                <span class="priceAudioSecond"></span>
+
+                <p class="repearCamera">замена камеры (основной):</p>
+                <span class="priceCamera"></span>
+
+                <p class="repearBattery">замена аккумулятора:</p>
+                <span class="priceBattery"></span>
+
+                <p class="repearClean">чистка от пыли:</p>
+                <span class="priceClean"></span>
+
+                <p class="repearOther">остальные услуги:</p>
+                <span class="priceOther">уточняйте</span>
+            </div>
         </div>
     </section>
     <section class="wr-whyWe">
@@ -38,7 +151,13 @@
             <div class="wr-whyMe_pay whyMeDiv"></div>
         </div>
     </section>
+    <section class="wr-repearing">
+        <div class="container">
+
+        </div>
+    </section>
     <section class="wr-callBack">
+        <a name="callBack"></a>
         <div class="container">
             <h2>Вы можете оставить заявку и мы вам обязательно перезвоним!</h2>
             <div class="wr-callBackPhone">
@@ -47,6 +166,7 @@
         </div>
     </section>
     <section class="wr-aboutUs">
+        <a name="weAre"></a>
         <div class="container">
             <h2 class="wr-aboutUs_header">О нас</h2>
             <div style="position:relative;overflow:hidden;"><iframe src="https://yandex.by/map-widget/v1/-/CSC-b-MH" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
